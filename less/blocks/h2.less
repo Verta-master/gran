@@ -1,0 +1,33 @@
+.h2 {
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #000;
+  text-transform: uppercase;
+  position: relative;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 65px;
+    height: 3px;
+    background-color: #000;
+  }
+  
+  &--white {
+    color: #fff;
+    
+    &::after {
+      background-color: #fff;
+    }
+  }
+}
+
+.h2__sub {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 600;
+  color: #000;
+}

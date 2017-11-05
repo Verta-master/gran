@@ -10,10 +10,10 @@
   <section class="promo">
     <div class="wrapper">
       <header class="header">
-        <div class="logo-main">
+        <a href="gran-sk.ru" class="logo-main">
           <span>ГРАНЬ</span>
           <p>Строительная компания</p>
-        </div>
+        </a>
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item">
@@ -29,17 +29,23 @@
         </nav>
         <div class="user">
           <a href="Tel:+78888008080" class="user__phone">8 (888) 800-80-80</a>
-          <a href="" class="user__btn">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
+          <button type="button" class="user__btn">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
         </div>
       </header>
-      <div class="title">
-        <h1 class="title__h1">ВИДИМЫЙ РЕЗУЛЬТАТ ДО НАЧАЛА РЕМОНТА</h1>
-        <p class="title__sub">Бесплатная консультация опытного специалиста в любое удобное для Вас время, по всем вопросам.</p>
-        <form action="#" method="post" class="consult">
-          <input type="text" name="name" class="consult__input" placeholder="Ваше имя">
-          <input type="tel" name="phone" class="consult__input" placeholder="ваш номер телефона">
-          <button type="submit" class="btn">Получить консультацию</button>
-        </form>
+      <div class="promo__title">
+        <div class="title">
+          <h1 class="title__h1">ВИДИМЫЙ РЕЗУЛЬТАТ ДО НАЧАЛА РЕМОНТА</h1>
+          <p class="title__sub">Бесплатная консультация опытного специалиста<br>в любое удобное для Вас время, по всем вопросам.</p>
+          <form action="#" method="post" class="consult">
+            <div class="consult__wrap">
+              <input type="text" name="name" class="consult__input" placeholder="Ваше имя">
+            </div>
+            <div class="consult__wrap">
+              <input type="tel" name="phone" class="consult__input" placeholder="ваш номер телефона">
+            </div>
+            <button type="submit" class="consult__btn">Получить консультацию</button>
+          </form>
+        </div>
       </div>
     </div>
   </section>
@@ -59,21 +65,19 @@
     <div class="wrapper design__wrap">
       <span class="design__aside">дизайн проект</span>
       <div class="design__block">
-        <h2 class="h2 h2--white">Зачем нужен дизайн-проект?</h2>
+        <h2 class="h2 h2--white">Зачем нужен<br>дизайн-проект?</h2>
         <p>Для быстрого и точного достижения высокого результата, бригаде мастеров требуется четкое техническое задание. Специалисты будут чётко понимать постановку задачи, комплекс требований к финальному результату. Дизайн-проект поможет избежать ряда недоразумений организационного характера, четко определить технические и художественные критерии достижения оптимального результата.</p>
         <p>Головная боль, связанная с выбором отделочных материалов и декоративных элементов, перестает беспокоить Вас, т.к. дизайн проект подразумевает выбор и просчет необходимого материала. Наши клиенты не посещают магазины в поисках недостающих элементов, не обзванивают и не посещают десятки магазинов. Широкая партнерская сеть профильных магазинов позволяет без труда осуществлять подбор и своевременную доставку необходимых материалов на объект.</p>
         <p>Наличие дизайн-проекта гарантирует завершение работ в указанные сроки без задержек. Благодаря 3D – моделированию, проще определиться с общей концепцией будущего ремонта и предусмотреть ряд важных технических решений еще до начала работ. Жилое или коммерческое помещение, соответствующее Вашим стандартам красоты, уюта, функциональности, можно детально сконфигурировать благодаря современной технологии, грамотному подходу и ответственному исполнению.</p>
       </div>
-      <div class="design__block">
-        <img src="img/project-1.jpg" alt="дизайн проект" class="design__img" width="255" height="388">
-      </div>
+      <img src="img/project-1.jpg" alt="дизайн проект" class="design__img" width="255" height="388">
     </div>
   </section>
   
   <section class="project">
     <div class="wrapper project__wrap">
       <div class="project__block">
-        <img src="img/project-2.jpg" alt="Разработка дизайн-проекта" class="project__img" width="729" height="500">
+        <img src="img/project-2.jpg" alt="Разработка дизайн-проекта" class="project__img-large" width="729" height="500">
         <div class="project__wrap">
           <img src="img/project-4.jpg" alt="дизайн-проект" class="project__img" width="335" height="200">
           <p class="project__title">что входит в дизайн-проект</p>

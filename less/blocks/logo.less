@@ -1,0 +1,50 @@
+.logo-main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-transform: uppercase;
+  
+  span {
+    display: block;
+    margin-right: 5px;
+    width: 121px;
+    height: 44px;
+    font-family: "Gotham Pro", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 44px;
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 5px;
+    text-align: center;
+    border: 2px solid #fff;
+    position: relative;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: -18px;
+      width: 14px;
+      height: 12px;
+      background-image: url(../img/logo-part.png);
+      background-repeat: no-repeat;
+    }
+  }
+  
+  p {
+    width: 80px;
+    margin: 0;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: rgba(255,255,255,0.6);
+  }
+  
+  &:hover,
+  &:active {
+    
+    span,
+    p {
+      color: #fff;
+    }
+  }
+}
