@@ -1,0 +1,41 @@
+.feedback {
+  width: 100%;
+  color: #fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #000;
+  background-image: url(../img/bg-consult.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  &--faq {
+    background-image: url(../img/bg-faq.jpg);
+  }
+}
+
+.feedback__wrap {
+  padding-left: 30px;
+}
+
+.feedback__title {
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.feedback__text {
+  font-size: 16px;
+}
+
+.feedback__btn {
+  display: block;
+  
+  &::after {
+    display: none;
+  }
+}
+
+.feedback--input::after {
+  box-shadow: none;
+}
