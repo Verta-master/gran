@@ -78,29 +78,31 @@
     <div class="wrapper project__wrap">
       <div class="project__block">
         <img src="img/project-2.jpg" alt="Разработка дизайн-проекта" class="project__img-large" width="729" height="500">
-        <div class="project__wrap">
+        <div class="project__scheme">
           <img src="img/project-4.jpg" alt="дизайн-проект" class="project__img" width="335" height="200">
-          <p class="project__title">что входит в дизайн-проект</p>
-          <ol class="project__list">
-            <li class="project__item">План обмера помещения</li>
-            <li class="project__item">План демонтажа перегородок</li>
-            <li class="project__item">План возведения перегородок</li>
-            <li class="project__item">План расстановки мебели</li>
-            <li class="project__item">План электровыводов и светильников</li>
-            <li class="project__item">План пола</li>
-            <li class="project__item">План потолка</li>
-            <li class="project__item">3D-визуализация помещений</li>
-          </ol>
+          <div class="project__plan">
+            <p class="project__title">что входит в дизайн-проект</p>
+            <ol class="project__list">
+              <li class="project__item">План обмера помещения</li>
+              <li class="project__item">План демонтажа перегородок</li>
+              <li class="project__item">План возведения перегородок</li>
+              <li class="project__item">План расстановки мебели</li>
+              <li class="project__item">План электровыводов и светильников</li>
+              <li class="project__item">План пола</li>
+              <li class="project__item">План потолка</li>
+              <li class="project__item">3D-визуализация помещений</li>
+            </ol>
+          </div>
         </div>
       </div>
-      <div class="project__block">
-        <h2 class="h2">Разработка дизайн-проекта</h2>
+      <div class="project__info">
+        <h2 class="h2">Разработка<br>дизайн-проекта</h2>
         <p>Каждый дизайн проект – уникальное творение группы профессионалов, знающих толк в своём деле. Создание происходит в соответствии с пожеланиями заказчика и проверяется по 32-м критериям. Осуществляем подготовку всей документации, входящую в оответствующий пакет, для дальнейшей реализации работ.</p>
-        <div class="project__btn">
-          <button type="button" class="btn project__btn">рассчитать стоимость</button>
-          <span class="project__price">от 1 500 руб./м2</span>
+        <div class="project__sum">
+          <button type="button" class="consult__btn project__btn">рассчитать стоимость</button>
+          <span class="project__price">от <b>1 500</b> руб./м<sup>2</sup></span>
         </div>
-        <img src="img/project-3.jpg" alt="дизайн-проект" class="project__img" width="379" height="350">
+        <img src="img/project-3.jpg" alt="дизайн-проект" class="project__img-info" width="379" height="350">
       </div>
     </div>
   </section>
@@ -116,13 +118,17 @@
   </section>
   
   <section class="feedback">
-    <div class="wrapper">
-      <h2 class="h2 h2--white">Бесплатная консультация</h2>
+    <div class="wrapper feedback__wrap">
+      <h3 class="feedback__title">Бесплатная консультация</h3>
       <p class="feedback__text">Дизайнер с большим стажем проконсультирует Вас абсолютно бесплатно.</p>
       <form action="#" method="post" class="consult">
-        <input type="text" name="name" class="consult__input" placeholder="Ваше имя">
-        <input type="tel" name="phone" class="consult__input" placeholder="ваш номер телефона">
-        <button type="submit" class="btn">Получить консультацию</button>
+        <div class="consult__wrap feedback--input">
+          <input type="text" name="name" class="consult__input" placeholder="Ваше имя">
+        </div>
+        <div class="consult__wrap feedback--input">
+          <input type="tel" name="phone" class="consult__input" placeholder="ваш номер телефона">
+        </div>
+        <button type="submit" class="consult__btn feedback__btn">Получить консультацию</button>
       </form>
     </div>
   </section>
@@ -173,27 +179,32 @@
   
   <section class="feedback feedback--faq">
     <div class="wrapper">
-      <h2 class="h2 h2--white">У Вас возник вопрос?</h2>
+      <h3 class="feedback__title">У Вас возник вопрос?</h3>
       <p class="feedback__text">Проконсультируем и ответим на всё. Оставьте заявку и с Вами свяжется наш специалист.</p>
       <form action="#" method="post" class="consult">
-        <input type="text" name="name" class="consult__input" placeholder="Ваше имя">
-        <input type="tel" name="phone" class="consult__input" placeholder="ваш номер телефона">
-        <button type="submit" class="btn">Отправить запрос</button>
+        <div class="consult__wrap feedback--input">
+          <input type="text" name="name" class="consult__input" placeholder="Ваше имя">
+        </div>
+        <div class="consult__wrap feedback--input">
+          <input type="tel" name="phone" class="consult__input" placeholder="ваш номер телефона">
+        </div>
+        <button type="submit" class="consult__btn feedback__btn">Отправить запрос</button>
       </form>
     </div>
   </section>
   
   <section class="contacts" id="contacts">
-    <div class="wrapper">
+    <div class="wrapper contacts__wrap">
       <div class="contacts__block">
         <h2 class="h2">контакты</h2>
         <a href="Tel:+78882223344" class="contacts__link"><span>Т. </span>8 (888) 222-33-44</a>
         <a href="mailto:grani@gmail.com" class="contacts__link"><span>П. </span>grani@gmail.com</a>
         <address class="contacts__link"><span>A. </span>Краснодар, Северная, 480</address>
         <p class="contacts__text">Всегда на связи. Рады помочь сделать Ваш ремонт произведением искусства.</p>
-        ЗАДАТЬ ВОПРОС / ОБРАТНАЯ СВЯЗЬ
+        <button type="button" class="contacts__btn">ЗАДАТЬ ВОПРОС / ОБРАТНАЯ СВЯЗЬ</button>
       </div>
     </div>
+    <div class="contacts__map"></div>
   </section>
   
   <footer class="footer">
@@ -201,27 +212,20 @@
       <div class="footer__block">
         <ul class="social">
           <li class="social__item">
-            <a href="#" class="social__link" title="Instagram">
-              <img src="img/icon-insta.png" alt="" width="16" height="16">
-            </a>
+            <a href="#" class="social__link social__link--in" title="Instagram"></a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link" title="Vkontakte">
-              <img src="img/icon-vk.png" alt="" width="16" height="16">
-            </a>
+            <a href="#" class="social__link social__link--vk" title="Vkontakte"></a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link" title="Blogger">
-              <img src="img/icon-blogger.png" alt="" width="16" height="16">
-            </a>
+            <a href="#" class="social__link social__link--bg" title="Blogger"></a>
           </li>
         </ul>
         <p class="footer__copyright">© 2017 Все права на ресурс принадлежат «ГРАНЬ»</p>
       </div>
       <a href="http://laylaydigital.ru/" class="logo">
-        <img src="img/logo-laylay.png" alt="logo" class="logo__img" width="38" height="51">
         <div class="logo__info">
-          <h3 class="logo__title">Lay Lay</h3>
+          <p class="logo__title">Lay Lay</p>
           <p class="logo__text">Создание сайта</p>
         </div>
       </a>
