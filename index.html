@@ -59,6 +59,9 @@
       </div>
       <span class="about__aside">о нас</span>
     </div>
+    <figure class="about__img">
+      <img src="img/scheme.jpg" alt="о нас" width="785" height="532">
+    </figure>
   </section>
   
   <section class="design" id="design">
@@ -108,11 +111,32 @@
   </section>
   
   <section class="style">
-    <div class="wrapper">
+    <div class="wrapper style__wrap">
       <div class="style__title">
         <h2 class="h2">СТИЛИ И НАПРАВЛЕНИЯ</h2>
       </div>
-      
+      <div class="swiper-container style__slider">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide style__slide">
+            <img src="img/slide.jpg" class="style__img" alt="стиль лофт" width="1920" height="1080">
+            <p class="style__name"><span>стиль лофт</span></p>
+          </li>
+          <li class="swiper-slide style__slide">
+            <img src="img/slide.jpg" class="style__img" alt="стиль лофт" width="1920" height="1080">
+            <p class="style__name"><span>стиль 2</span></p>
+          </li>
+          <li class="swiper-slide style__slide">
+            <img src="img/slide.jpg" class="style__img" alt="стиль лофт" width="1920" height="1080">
+            <p class="style__name"><span>стиль 3</span></p>
+          </li>
+          <li class="swiper-slide style__slide">
+            <img src="img/slide.jpg" class="style__img" alt="стиль лофт" width="1920" height="1080">
+            <p class="style__name"><span>стиль 4</span></p>
+          </li>
+        </ul>
+        <div class="swiper-button-next style__next"></div>
+        <div class="swiper-button-prev style__prev"></div>
+      </div>
       <span class="style__aside">стили</span>
     </div>
   </section>
@@ -135,9 +159,19 @@
   
   <section class="steps">
     <div class="wrapper">
-      <h2 class="h2">этапы работы с нами</h2>
-      <p>Нацеленность на результат и максимальное взаимопонимание сторон. Ответственность за качество и сроки выполнения закреплена в договоре</p>
-      
+      <div class="steps__block">
+        <h2 class="h2">этапы работы с нами</h2>
+        <p>Нацеленность на результат и максимальное взаимопонимание сторон. Ответственность за качество и сроки выполнения закреплена в договоре</p>
+      </div>
+      <ul class="steps__list">
+        <li class="steps__item"><span>1.</span> Оставьте заявку</li>
+        <li class="steps__item"><span>2.</span> Консультация</li>
+        <li class="steps__item"><span>3.</span> Замер</li>
+        <li class="steps__item"><span>4.</span> Концепция и просчет</li>
+        <li class="steps__item"><span>5.</span> Подбор материалов</li>
+        <li class="steps__item"><span>6.</span> Монтаж</li>
+        <li class="steps__item"><span>7.</span> Комплектация</li>
+      </ul>
     </div>
   </section>
   
@@ -232,6 +266,18 @@
     </div>
   </footer>
   
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/swiper.min.js"></script>
 <!--  <script src="js/script.js"></script>-->
+
+<!-- Slider -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: "auto",
+      loop: true,
+      nextButton: ".swiper-button-next",
+      prevButton: ".swiper-button-prev",
+    });
+  </script>
 </body>
 </html>
