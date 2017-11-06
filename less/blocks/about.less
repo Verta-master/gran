@@ -1,8 +1,21 @@
 .about {
-  background-image: url(../img/scheme.jpg);
-  background-repeat: no-repeat;
-  background-size: 785px 532px;
-  background-position: right top;
+  position: relative;
+}
+
+.about__img {
+  position: absolute;
+  top: 0;
+  left: ~"calc(50% + 172px)";
+  width: ~"calc(50% - 172px)";
+  height: 532px;
+  overflow: hidden;
+  border-left: 1px solid rgb(233, 233, 233);
+  
+  img {
+    display: block;
+    max-width: none;
+    height: 100%;
+  }
 }
 
 .about__block {
@@ -23,6 +36,7 @@
     width: 2px;
     height: 200px;
     background-color: #000;
+    z-index: 5;
   }
 }
 
@@ -34,4 +48,5 @@
   color: #2f2f2f;
   font-size: 14px;
   font-weight: 700;
+  z-index: 5;
 }
