@@ -5,8 +5,8 @@
 .contacts__map {
   position: absolute;
   top: 0;
-  left: ~"calc(50% - 165px)";
-  width: ~"calc(50% + 165px)";
+  left: ~"calc(50% - 175px)";
+  width: ~"calc(50% + 175px)";
   height: 636px;
   background-image: url(../img/map.jpg);
   background-repeat: no-repeat;
@@ -21,29 +21,28 @@
 }
 
 .contacts__block {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   min-height: 636px;
   width: 410px;
+  padding-top: 175px;
   padding-left: 30px;
   padding-right: 130px;
 }
 
 .contacts__link {
+  display: block;
   color: @normal;
   font-style: normal;
   
   span {
     font-weight: 600;
     color: #000;
+    margin-right: 10px;
   }
 }
 
 .contacts__text {
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin-top: 27px;
+  margin-bottom: 33px;
 }
 
 .contacts__btn {

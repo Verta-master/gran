@@ -5,8 +5,8 @@
 .about__img {
   position: absolute;
   top: 0;
-  left: ~"calc(50% + 172px)";
-  width: ~"calc(50% - 172px)";
+  left: ~"calc(50% + 174px)";
+  width: ~"calc(50% - 174px)";
   height: 532px;
   overflow: hidden;
   border-left: 1px solid rgb(233, 233, 233);
@@ -21,12 +21,9 @@
 .about__block {
   width: 760px;
   min-height: 532px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  padding-top: 140px;
   padding-left: 30px;
-  padding-right: 255px;
+  padding-right: 240px;
   
   &::after {
     content: "";
@@ -40,10 +37,14 @@
   }
 }
 
+.about__text {
+  margin: 0;
+}
+
 .about__aside {
   position: absolute;
   transform: rotate(90deg);
-  top: 220px;
+  top: 225px;
   right: -20px;
   color: #2f2f2f;
   font-size: 14px;

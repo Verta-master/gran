@@ -6,8 +6,8 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: ~"calc(50% - 165px)";
-    height: 597px;
+    width: ~"calc(50% - 170px)";
+    height: 603px;
     background-color: rgb(249, 249, 249);
     z-index: -1;
   }
@@ -16,7 +16,7 @@
     content: "";
     position: absolute;
     right: 0;
-    bottom: 94px;
+    bottom: 96px;
     width: ~"calc(50% - 525px)";
     height: 1px;
     background-color: rgb(233, 233, 233);
@@ -31,12 +31,13 @@
   font-weight: 500;
   color: #000;
   text-transform: uppercase;
-  width: 388px;
+  width: 383px;
   height: 160px;
   margin: 0;
-  padding-top: 20px;
+  padding-top: 25px;
   background-color: #f9f9f9;
   border-right: 1px solid rgb(233, 233, 233);
+  box-sizing: border-box;
   
   span {
     position: relative;
@@ -61,7 +62,7 @@
 .style__next {
   width: 65px;
   height: 65px;
-  bottom: 94px;
+  bottom: 96px;
   top: auto;
   border: none;
   background-color: rgba(0, 0, 0, 0.9);
@@ -72,24 +73,23 @@
 }
 
 .style__next {
-  left: 453px;
+  left: 448px;
   border-left: 1px solid rgba(255, 255, 255, 0.149);
 }
 
 .style__prev {
-  left: 388px;
-//  border-right: 1px solid rgba(255, 255, 255, 0.149);
+  left: 383px;
 }
 
 .style__wrap {
   padding: 0 30px;
-  padding-top: 90px;
+  padding-top: 93px;
   
   &::after {
     content: "";
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: -2px;
     width: 2px;
     height: 200px;
     background-color: #000;
@@ -98,14 +98,14 @@
 }
 
 .style__slider {
-  padding-bottom: 94px;
+  padding-bottom: 96px;
 }
 
 .style__aside {
   position: absolute;
-  transform: rotate(90deg);
-  bottom: 220px;
-  right: -20px;
+  transform: rotate(-90deg);
+  bottom: 230px;
+  right: -18px;
   color: #2f2f2f;
   font-size: 14px;
   font-weight: 700;
@@ -125,6 +125,10 @@
   border-right: 1px solid rgb(233, 233, 233);
   background-color: #fff;
   z-index: 5;
+  
+  h2 {
+    padding-top: 25px;
+  }
   
   h2::after {
     display: none;
