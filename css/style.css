@@ -989,6 +989,7 @@ button {
   width: 208px;
   color: #000;
   border-color: #000;
+  margin-right: 13px;
 }
 .project__btn::before {
   background-color: #000;
@@ -1024,7 +1025,6 @@ button {
 .project__price {
   color: #000;
   font-weight: 600;
-  margin-left: 13px;
   text-transform: uppercase;
 }
 .project__price b {
@@ -3210,7 +3210,7 @@ button.swiper-pagination-bullet {
     width: 255px;
   }
 }
-@media (orientation: landscape){
+@media (orientation: landscape) and (max-width: 601px){
   .modal{
     -ms-flex-align: start;
         align-items: flex-start;
