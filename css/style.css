@@ -1223,7 +1223,7 @@ button {
   color: #2f2f2f;
   position: relative;
 }
-.steps__item:first-child {
+.steps__item:first-child a {
   color: #e52222;
   cursor: pointer;
 }
