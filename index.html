@@ -29,7 +29,7 @@
         </nav>
         <div class="user">
           <a href="Tel:+78888008080" class="user__phone">8 (888) 800-80-80</a>
-          <button type="button" class="user__btn">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+          <a data-fancybox data-src="#modal" href="javascript:;" class="user__btn">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
         </div>
       </header>
       <div class="promo__title">
@@ -85,7 +85,7 @@
           <h2 class="h2">Разработка<br>дизайн-проекта</h2>
           <p>Каждый дизайн проект – уникальное творение группы профессионалов, знающих толк в своём деле. Создание происходит в соответствии с пожеланиями заказчика и проверяется по 32-м критериям. Осуществляем подготовку всей документации, входящую в оответствующий пакет, для дальнейшей реализации работ.</p>
           <div class="project__sum">
-            <button type="button" class="consult__btn project__btn">рассчитать стоимость</button>
+            <a data-fancybox data-src="#modal" href="javascript:;" class="consult__btn project__btn">рассчитать стоимость</a>
             <span class="project__price">от <b>1 500</b> руб./м<sup>2</sup></span>
           </div>
         </div>
@@ -237,7 +237,7 @@
         <a href="mailto:grani@gmail.com" class="contacts__link"><span>П. </span>grani@gmail.com</a>
         <address class="contacts__link"><span>A. </span>Краснодар, Северная, 480</address>
         <p class="contacts__text">Всегда на связи. Рады помочь сделать Ваш ремонт произведением искусства.</p>
-        <button type="button" class="contacts__btn">ЗАДАТЬ ВОПРОС / ОБРАТНАЯ СВЯЗЬ</button>
+        <a data-fancybox data-src="#modal" href="javascript:;" class="contacts__btn">ЗАДАТЬ ВОПРОС / ОБРАТНАЯ СВЯЗЬ</a>
       </div>
     </div>
     <div class="contacts__map">
@@ -269,6 +269,27 @@
       </a>
     </div>
   </footer>
+  
+  <div style="display: none;">
+    <div class="modal" id="modal">
+      <div class="modal__wrap">
+        <h2 class="h2 modal__title">получить консультацию</h2>
+        <p>Оставьте заявку, и в скором времени с вами свяжутся наши специалисты и проконсультируют вас.</p>
+        <form action="#" method="post" class="consult">
+          <div class="consult__wrap modal__field">
+            <input type="text" name="name" class="modal__input" placeholder="Ваше имя">
+          </div>
+          <div class="consult__wrap modal__field">
+            <input type="tel" name="phone" class="modal__input" placeholder="ваш номер телефона">
+          </div>
+          <div class="consult__wrap modal__field modal__field--comment">
+            <input type="text" name="comment" class="modal__input" placeholder="+ добавить Коментарий">
+          </div>
+          <button type="submit" class="consult__btn modal__btn">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/swiper.min.js"></script>
