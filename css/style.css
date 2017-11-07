@@ -928,7 +928,6 @@ button {
 }
 .project__img-large {
   display: block;
-  margin-top: -75px;
 }
 .project__info {
   width: 409px;
@@ -1031,6 +1030,13 @@ button {
   font-weight: 600;
   font-size: 19px;
   margin-right: 5px;
+}
+.project__figure {
+  overflow: hidden;
+}
+.project__figure-large {
+  overflow: hidden;
+  margin-top: -75px;
 }
 .feedback {
   width: 100%;
