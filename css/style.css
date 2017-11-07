@@ -431,6 +431,7 @@ img {
 }
 a {
   text-decoration: none;
+  outline: none;
 }
 html {
   box-sizing: border-box;
@@ -713,6 +714,7 @@ button {
   box-shadow: 0px 0px 7.1px 2.9px rgba(0, 0, 0, 0.95);
 }
 .consult__btn {
+  display: block;
   width: 218px;
   height: 36px;
   padding-left: 43px;
@@ -1008,6 +1010,14 @@ button {
   transition: ease-out 0.3s;
 }
 .project__sum {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: baseline;
+      align-items: baseline;
   margin-top: 35px;
   margin-bottom: 47px;
 }
@@ -2585,6 +2595,141 @@ button.swiper-pagination-bullet {
 .work__img {
   display: block;
 }
+.modal {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  margin: 0 !important;
+  padding-top: 40px !important;
+  padding-left: 40px !important;
+  background-color: #fff;
+  z-index: 20;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.modal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  box-shadow: 0px 3px 59px 0px rgba(0, 0, 0, 0.05);
+  z-index: -1;
+}
+.modal p {
+  margin-bottom: 20px;
+}
+.fancybox-close-small::after {
+  content: "Закрыть";
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  font-family: "Exo 2", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  color: #525252;
+  text-align: right;
+  width: 100px;
+  padding-right: 20px;
+  cursor: pointer;
+  border-radius: 0;
+  transition: none;
+  background-color: transparent;
+  background-image: url(../img/icon-close.png);
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  background-position: right center;
+}
+.fancybox-close-small:hover::after,
+.fancybox-close-small:active::after {
+  color: #000;
+  background-color: transparent;
+  background-image: url(../img/icon-close-black.png);
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  background-position: right center;
+  outline: none;
+}
+.modal__input {
+  width: 255px;
+  height: 34px;
+  font-size: 12px;
+  line-height: 30px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+.modal__input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+}
+.modal__input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+}
+.modal__title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -40px;
+  width: 430px;
+  max-width: 100%;
+  height: 12px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.modal__field {
+  margin-bottom: 20px;
+}
+.modal__field::after {
+  width: 255px;
+  box-shadow: none;
+  background-color: #000;
+}
+.modal__field--comment {
+  display: block;
+}
+.modal__field--comment::after {
+  width: 540px;
+}
+.modal__field--comment .modal__input {
+  width: 540px;
+}
+.modal__field:first-child {
+  margin-right: 30px;
+}
+.modal__btn {
+  width: 131px;
+  color: #000;
+  border-color: #000;
+  margin-top: 15px;
+}
+.modal__btn::before {
+  background-color: #000;
+}
+.modal__btn::after {
+  background-color: #000;
+  left: -40px;
+  width: 40px;
+}
+.modal__btn:hover,
+.modal__btn:active {
+  color: #fff;
+  background-color: #000;
+  transition: ease-out 0.3s;
+}
+.modal__btn:hover::before,
+.modal__btn:active::before {
+  background-image: url(../img/arrow-next-white.png);
+  transition: ease-out 0.3s;
+}
 @media all and (max-width: 800px){
   .fancybox-infobar{
     left: 0;
@@ -3054,5 +3199,20 @@ button.swiper-pagination-bullet {
   .social{
     -ms-flex-pack: center;
         justify-content: center;
+  }
+  .modal{
+    padding-left: 20px !important;
+  }
+  .modal__field--comment::after{
+    width: 255px;
+  }
+  .modal__field--comment .modal__input{
+    width: 255px;
+  }
+}
+@media (orientation: landscape){
+  .modal{
+    -ms-flex-align: start;
+        align-items: flex-start;
   }
 }
