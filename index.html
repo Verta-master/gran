@@ -4,35 +4,39 @@
   <meta charset="UTF-8">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>Строительная компания: ГРАНЬ</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+  <header class="header">
+    <div class="wrapper header__wrap">
+      <a href="http://gran-sk.ru" class="logo-main">
+        <span>ГРАНЬ</span>
+        <p>Строительная компания</p>
+      </a>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#design" class="menu__link">дизайн проект</a>
+          </li>
+          <li class="menu__item">
+            <a href="#works" class="menu__link">работы</a>
+          </li>
+          <li class="menu__item">
+            <a href="#contacts" class="menu__link">контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user">
+        <a href="Tel:+78888008080" class="user__phone">8 (888) 800-80-80</a>
+        <a data-fancybox data-src="#modal" href="javascript:;" class="user__btn">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
+      </div>
+    </div>
+  </header>
+      
   <section class="promo">
     <div class="wrapper">
-      <header class="header">
-        <a href="gran-sk.ru" class="logo-main">
-          <span>ГРАНЬ</span>
-          <p>Строительная компания</p>
-        </a>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a href="#design" class="menu__link">дизайн проект</a>
-            </li>
-            <li class="menu__item">
-              <a href="#works" class="menu__link">работы</a>
-            </li>
-            <li class="menu__item">
-              <a href="#contacts" class="menu__link">контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="user">
-          <a href="Tel:+78888008080" class="user__phone">8 (888) 800-80-80</a>
-          <a data-fancybox data-src="#modal" href="javascript:;" class="user__btn">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
-        </div>
-      </header>
       <div class="promo__title">
         <div class="title">
           <h1 class="title__h1">ВИДИМЫЙ РЕЗУЛЬТАТ ДО НАЧАЛА РЕМОНТА</h1>
@@ -112,7 +116,7 @@
             <li class="project__item wow fadeInUp">3D-визуализация помещений</li>
           </ol>
         </div>
-        <figure class="project__figure">
+        <figure class="project__figure project__figure--info">
           <img src="img/project-3.jpg" alt="дизайн-проект" class="project__img-info wow slideInLeft" data-wow-duration="2s" data-wow-offset="300" width="379" height="350">
         </figure>
       </div>
@@ -194,28 +198,49 @@
             <p class="wow fadeInUp">Каждый проект оригинален в своём исполнении и имеет яркую историю создания.  Взгляните нам мир под гранями совершенства.</p>
           </li>
           <li class="works__item">
-            <a data-fancybox="gallery" href="img/work-1.jpg">
-              <img src="img/work-1.jpg" alt="наши работы" class="work__img" width="555" height="555">
+            <a data-fancybox="gallery-1" href="img/work-1.jpg">
+              <figure class="work__figure">
+                <img src="img/work-1.jpg" alt="наши работы" class="work__img wow slideInLeft" data-wow-duration="2s" data-wow-offset="300" width="555" height="555">
+              </figure>
               <div class="works__overlay">
                 <h3 class="works__h3">Дизайн проект двухкомнатной квартиры в неоклассике</h3>
               </div>
             </a>
+            <div class="hidden">
+              <a data-fancybox="gallery-1" href="img/project-1.jpg"></a>
+              <a data-fancybox="gallery-1" href="img/project-2.jpg"></a>
+              <a data-fancybox="gallery-1" href="img/project-3.jpg"></a>
+            </div>
           </li>
           <li class="works__item">
-            <a data-fancybox="gallery" href="img/work-2.jpg">
-              <img src="img/work-2.jpg" alt="наши работы" class="work__img" width="555" height="555">
+            <a data-fancybox="gallery-2" href="img/work-2.jpg">
+              <figure class="work__figure">
+                <img src="img/work-2.jpg" alt="наши работы" class="work__img wow slideInLeft" data-wow-duration="2s" data-wow-offset="300" width="555" height="555">
+              </figure>
               <div class="works__overlay">
                 <h3 class="works__h3">Дизайн проект двухкомнатной квартиры в неоклассике</h3>
               </div>
             </a>
+            <div class="hidden">
+              <a data-fancybox="gallery-2" href="img/project-1.jpg"></a>
+              <a data-fancybox="gallery-2" href="img/project-2.jpg"></a>
+              <a data-fancybox="gallery-2" href="img/project-3.jpg"></a>
+            </div>
           </li>
           <li class="works__item">
-            <a data-fancybox="gallery" href="img/work-3.jpg">
-              <img src="img/work-3.jpg" alt="наши работы" class="work__img" width="555" height="555">
+            <a data-fancybox="gallery-3" href="img/work-3.jpg">
+              <figure class="work__figure">
+                <img src="img/work-3.jpg" alt="наши работы" class="work__img wow slideInLeft" data-wow-duration="2s" data-wow-offset="300" data-wow-delay="1s" width="555" height="555">
+              </figure>
               <div class="works__overlay">
                 <h3 class="works__h3">Дизайн проект двухкомнатной квартиры в неоклассике</h3>
               </div>
             </a>
+            <div class="hidden">
+              <a data-fancybox="gallery-3" href="img/project-1.jpg"></a>
+              <a data-fancybox="gallery-3" href="img/project-2.jpg"></a>
+              <a data-fancybox="gallery-3" href="img/project-3.jpg"></a>
+            </div>
           </li>
         </ul>
       </div>
@@ -250,7 +275,7 @@
       </div>
     </div>
     <div class="contacts__map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11277.941649509905!2d38.984542876105536!3d45.035370641890594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f04f8dfacd8409%3A0x122d764ef8982186!2sUlitsa+Severnaya%2C+480%2C+Krasnodar%2C+Krasnodarskiy+kray%2C+Russia%2C+350002!5e0!3m2!1sen!2skz!4v1509946842063" allowfullscreen></iframe>
+      <iframe src="https://snazzymaps.com/embed/27566" width="100%" height="636px"></iframe>
     </div>
   </section>
   
@@ -281,21 +306,48 @@
   
   <div style="display: none;">
     <div class="modal" id="modal">
-      <div class="modal__wrap">
-        <h2 class="h2 modal__title">получить консультацию</h2>
-        <p>Оставьте заявку, и в скором времени с вами свяжутся наши специалисты и проконсультируют вас.</p>
-        <form action="#" method="post" class="consult">
-          <div class="consult__wrap modal__field">
-            <input type="text" name="name" class="modal__input" placeholder="Ваше имя">
+      <header class="modal__header">
+        <div class="wrapper header__wrap">
+          <a href="http://gran-sk.ru" class="logo-main">
+            <span>ГРАНЬ</span>
+            <p>Строительная компания</p>
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#design" class="menu__link">дизайн проект</a>
+              </li>
+              <li class="menu__item">
+                <a href="#works" class="menu__link">работы</a>
+              </li>
+              <li class="menu__item">
+                <a href="#contacts" class="menu__link">контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="user">
+            <a href="Tel:+78888008080" class="user__phone">8 (888) 800-80-80</a>
+            <a data-fancybox data-src="#modal" href="javascript:;" class="user__btn">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
           </div>
-          <div class="consult__wrap modal__field">
-            <input type="tel" name="phone" class="modal__input" placeholder="ваш номер телефона">
-          </div>
-          <div class="consult__wrap modal__field modal__field--comment">
-            <input type="text" name="comment" class="modal__input" placeholder="+ добавить Коментарий">
-          </div>
-          <button type="submit" class="consult__btn modal__btn">Отправить</button>
-        </form>
+        </div>
+      </header>
+      <div class="wrapper">
+        <div class="modal__body">
+          <h2 class="h2 modal__title">получить консультацию</h2>
+          <p>Оставьте заявку, и в скором времени с вами свяжутся наши специалисты и проконсультируют вас.</p>
+          <form action="#" method="post" class="consult">
+            <div class="consult__wrap modal__field">
+              <input type="text" name="name" class="modal__input" placeholder="Ваше имя">
+            </div>
+            <div class="consult__wrap modal__field">
+              <input type="tel" name="phone" class="modal__input" placeholder="ваш номер телефона">
+            </div>
+            <div class="consult__wrap modal__field modal__field--comment">
+              <input type="text" name="comment" class="modal__input" placeholder="+ добавить Коментарий">
+            </div>
+            <button type="submit" class="consult__btn modal__btn">Отправить</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
@@ -304,6 +356,7 @@
   <script src="js/swiper.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+  <script src="js/script.js"></script>
 
 <!-- Slider -->
   <script>
