@@ -1,13 +1,15 @@
 .promo {
   width: 100%;
   min-height: 900px;
-  padding-top: 35px;
+  padding-top: 320px;
   position: relative;
   background-color: #000;
-  background-image: url(../img/bg-main.jpg);
+  background-image: 
+    linear-gradient(to bottom, rgba(0,0,0,0.67) 0%, rgba(0,0,0,0.67) 48%, rgba(0,0,0,0.5) 72%, rgba(0,0,0,0) 100%),
+    url(../img/bg-main.jpg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: top, center;
+  background-size: 100% 266px, cover;
   
   &::after {
     content: "";
@@ -24,5 +26,4 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-top: 240px;
 }
