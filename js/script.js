@@ -29,11 +29,13 @@ $(document).ready(function(){
       });
       $(".logo-main p").css({
         'color': '#000',
-        'background-image': 'url(/img/logo-part-black.png)'
       });
       $(".logo-main span").css({
         'color': '#000',
         'border-color': '#000'
+      });
+      $(".logo-part").css({
+        'stroke': '#000',
       });
       $(".header__btn").css({
         'border-color': '#000'
@@ -64,11 +66,13 @@ $(document).ready(function(){
       });
       $(".logo-main p").css({
         'color': 'rgba(255,255,255,0.6)',
-        'background-image': 'url(/img/logo-part.png)'
       });
       $(".logo-main span").css({
         'color': 'rgba(255,255,255,0.8)',
         'border-color': '#fff'
+      });
+      $(".logo-part").css({
+        'stroke': '#fff',
       });
       $(".header__btn").css({
         'border-color': '#fff'

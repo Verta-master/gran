@@ -3,6 +3,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   text-transform: uppercase;
+  position: relative;
   
   span {
     display: block;
@@ -16,7 +17,6 @@
     letter-spacing: 8px;
     text-align: center;
     border: 2px solid #fff;
-    position: relative;
   }
   
   p {
@@ -29,10 +29,6 @@
     font-weight: 700;
     line-height: 1.2;
     color: rgba(255,255,255,0.6);
-    background-image: url(../img/logo-part.png);
-    background-repeat: no-repeat;
-    background-size: 14px 12px;
-    background-position: left 2px bottom;
   }
   
   &:hover,
@@ -43,6 +39,14 @@
       color: #fff;
     }
   }
+}
+
+.logo-part {
+  position: absolute;
+  bottom: 1px;
+  left: 125px;
+  z-index: 25;
+  stroke: #fff;
 }
 
 .logo__info {
