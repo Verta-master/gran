@@ -51,6 +51,7 @@
 }
 
 .project__title {
+  margin-top: 0;
   font-size: 14px;
   color: #000;
   font-weight: 700;
@@ -72,7 +73,6 @@
   width: 350px;
   margin: 0;
   padding-top: 5px;
-  padding-left: 15px;
 }
 
 .project__item {
@@ -83,8 +83,6 @@
 
 .project__plan {
   margin-left: 45px;
-  padding-top: 8px;
-  align-self: flex-start;
 }
 
 .project__btn {
@@ -114,6 +112,11 @@
       transition: ease-out 0.3s;
     }
   }
+  
+  &--package {
+    width: 160px;
+    margin-top: 30px;
+  }
 }
 
 .project__sum {
@@ -134,6 +137,12 @@
     font-weight: 600;
     font-size: 19px;
     margin-right: 5px;
+  }
+  
+  &--modal {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 

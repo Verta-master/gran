@@ -115,16 +115,10 @@
         </figure>
         <div class="project__plan">
           <p class="project__title wow fadeInUp">что входит в дизайн-проект</p>
-          <ol class="project__list">
-            <li class="project__item wow fadeInUp">План обмера помещения</li>
-            <li class="project__item wow fadeInUp">План демонтажа перегородок</li>
-            <li class="project__item wow fadeInUp">План возведения перегородок</li>
-            <li class="project__item wow fadeInUp">План расстановки мебели</li>
-            <li class="project__item wow fadeInUp">План электровыводов и светильников</li>
-            <li class="project__item wow fadeInUp">План пола</li>
-            <li class="project__item wow fadeInUp">План потолка</li>
-            <li class="project__item wow fadeInUp">3D-визуализация помещений</li>
-          </ol>
+          <div class="project__list">
+            <p class="project__item wow fadeInUp">Ознакомьтесь с пакетами дизайн-проекта и выберите подходящий именно для Вас.</p>
+            <a data-fancybox data-src="#popup" href="javascript:;" class="consult__btn project__btn project__btn--package">ознакомиться</a>
+          </div>
         </div>
         <figure class="project__figure project__figure--info">
           <img src="img/project-3.jpg" alt="дизайн-проект" class="project__img-info wow slideInLeft" data-wow-duration="2s" data-wow-offset="100" width="379" height="350">
@@ -358,6 +352,92 @@
             </div>
             <button type="submit" class="consult__btn modal__btn">Отправить</button>
           </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: none;">
+    <div class="modal" id="popup">
+      <header class="modal__header">
+        <div class="wrapper header__wrap">
+          <a href="http://gran-sk.ru" class="logo-main">
+            <span>ГРАНЬ</span>
+            <p>Строительная компания</p>
+          </a>
+          <button class="header__btn"></button>
+          <nav class="menu menu--closed">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#design" class="menu__link">дизайн проект</a>
+              </li>
+              <li class="menu__item">
+                <a href="#works" class="menu__link">работы</a>
+              </li>
+              <li class="menu__item">
+                <a href="#contacts" class="menu__link">контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="user">
+            <a href="Tel:+78888008080" class="user__phone">8 (888) 800-80-80</a>
+            <a data-fancybox data-src="#modal" href="javascript:;" class="user__btn">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
+          </div>
+        </div>
+      </header>
+      <div class="wrapper">
+        <div class="modal__popup">
+          <div class="modal__block">
+            <h2 class="h2 modal__title">Пакет 1 (концепт)</h2>
+            <ul class="modal__list">
+              <li class="modal__item">обмерочный чертеж</li>
+              <li class="modal__item">план расстановки мебели и оборудования</li>
+              <li class="modal__item">схемы монтажа/демонтажа</li>
+              <li class="modal__item">проект водоснабжения и канализации</li>
+              <li class="modal__item">планы электрификации и схема освещения</li>
+            </ul>
+            <span class="project__price project__price--modal">цена <b>250</b> руб./м<sup>2</sup></span>
+            <a data-fancybox data-src="#modal" href="javascript:;" class="consult__btn project__btn">рассчитать стоимость</a>
+          </div>
+          <div class="modal__block">
+            <h2 class="h2 modal__title">Пакет 2 (комфорт)</h2>
+            <ul class="modal__list">
+              <li class="modal__item">обмерочный чертеж</li>
+              <li class="modal__item">план расстановки мебели и оборудования</li>
+              <li class="modal__item">схемы монтажа/демонтажа</li>
+              <li class="modal__item">проект водоснабжения и канализации</li>
+              <li class="modal__item">планы электрификации и схема освещения</li>
+              <li class="modal__item">развертки с/узлов</li>
+              <li class="modal__item">раскладка плитки</li>
+              <li class="modal__item">исполнительные схемы</li>
+              <li class="modal__item">схемы монтажа ГКЛ конструкций</li>
+              <li class="modal__item">развертки стен</li>
+              <li class="modal__item">визуализация основных помещений</li>
+            </ul>
+            <span class="project__price project__price--modal">цена <b>600</b> руб./м<sup>2</sup></span>
+            <a data-fancybox data-src="#modal" href="javascript:;" class="consult__btn project__btn">рассчитать стоимость</a>
+          </div>
+          <div class="modal__block">
+            <h2 class="h2 modal__title">Пакет 3 (премиум)</h2>
+            <ul class="modal__list">
+              <li class="modal__item">обмерочный чертеж</li>
+              <li class="modal__item">план расстановки мебели и оборудования</li>
+              <li class="modal__item">схемы монтажа/демонтажа</li>
+              <li class="modal__item">проект водоснабжения и канализации</li>
+              <li class="modal__item">планы электрификации и схема освещения</li>
+              <li class="modal__item">развертки с/узлов</li>
+              <li class="modal__item">раскладка плитки</li>
+              <li class="modal__item">исполнительные схемы</li>
+              <li class="modal__item">схемы монтажа ГКЛ конструкций</li>
+              <li class="modal__item">развертки стен</li>
+              <li class="modal__item">визуализация всех помещений (до 3 вариантов)</li>
+              <li class="modal__item">подбор материалов с артикулами и предоставлением информации о покупке/наличии</li>
+              <li class="modal__item">подбор техники, мебели, оборудования</li>
+              <li class="modal__item">авторский надзор проекта</li>
+            </ul>
+            <span class="project__price project__price--modal">цена <b>990</b> руб./м<sup>2</sup></span>
+            <a data-fancybox data-src="#modal" href="javascript:;" class="consult__btn project__btn">рассчитать стоимость</a>
+          </div>
         </div>
       </div>
     </div>
