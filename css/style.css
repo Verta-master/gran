@@ -513,11 +513,13 @@ button {
 }
 .header__btn {
   display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
   width: 46px;
   height: 46px;
-  background-color: transparent;
-  background-image: url(../img/mobile_menu-white.png);
-  background-repeat: no-repeat;
+  padding: 3px;
+  border: 2px solid #fff;
   cursor: pointer;
 }
 .logo-main {
@@ -533,6 +535,7 @@ button {
   display: block;
   width: 123px;
   height: 46px;
+  padding-left: 7px;
   font-family: "Gotham Pro", "Arial", sans-serif;
   font-size: 16px;
   line-height: 44px;
@@ -644,6 +647,10 @@ button {
 .menu__link:active {
   color: #fff;
 }
+.menu__ham,
+.menu__close {
+  fill: #fff;
+}
 .user {
   padding-top: 5px;
 }
@@ -675,7 +682,7 @@ button {
   font-size: 36px;
   line-height: 1.2;
   font-weight: 600;
-  text-shadow: 0px 0px 7.1px rgba(0, 0, 0, 0.95);
+  text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.95);
   position: relative;
 }
 .title__h1::after {
@@ -686,7 +693,7 @@ button {
   width: 65px;
   height: 3px;
   background-color: #ffffff;
-  box-shadow: 0px 0px 7.1px 2.9px rgba(0, 0, 0, 0.95);
+  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.95);
 }
 .title__sub {
   margin-top: 30px;
@@ -729,7 +736,7 @@ button {
   width: 190px;
   height: 2px;
   background-color: #fff;
-  box-shadow: 0px 0px 7.1px 2.9px rgba(0, 0, 0, 0.95);
+  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.95);
 }
 .consult__btn {
   display: block;
@@ -1115,6 +1122,7 @@ button {
   text-transform: uppercase;
   font-weight: 700;
   color: #9c9c9c;
+  margin-bottom: 0;
 }
 .social {
   display: -ms-flexbox;
@@ -2951,31 +2959,40 @@ button.swiper-pagination-bullet {
 @media (max-width: 1023px){
   .header__btn{
     display: block;
-    -ms-flex-order: 3;
-        order: 3;
   }
-  .logo-main{
-    -ms-flex-order: 1;
-        order: 1;
+  .header__wrap{
+    padding-right: 100px;
   }
   .user{
-    -ms-flex-order: 2;
-        order: 2;
     padding-top: 0;
     text-align: right;
   }
   .user__phone{
     display: block;
   }
-  .menu--closed{
+  .menu--closed .menu__list{
     display: none;
   }
-  .menu--opened{
+  .menu--closed .menu__ham{
     display: block;
-    position: fixed;
+  }
+  .menu--closed .menu__close{
+    display: none;
+  }
+  .menu--opened .menu__list{
+    display: block;
+    position: absolute;
     top: 120px;
-    left: -15px;
+    right: -15px;
     width: 100vw;
+    text-align: right;
+    padding-right: 15px;
+  }
+  .menu--opened .menu__ham{
+    display: none;
+  }
+  .menu--opened .menu__close{
+    display: block;
   }
   .menu__list{
     padding-left: 30px;
@@ -3301,7 +3318,9 @@ button.swiper-pagination-bullet {
   }
   .footer__wrap{
     min-height: 80px;
-    padding-top: 25px;
+  }
+  .logo{
+    padding-top: 15px;
   }
   .title__sub{
     padding-bottom: 0;

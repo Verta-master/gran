@@ -1,17 +1,23 @@
 //Header scrolling
 $(document).ready(function(){
   $(window).scroll(function(){
-    if ((window.pageYOffset || document.documentElement.scrollTop ||document.body.scrollTop) >= 300) {
+    if ((window.pageYOffset || document.documentElement.scrollTop ||document.body.scrollTop) >= 100) {
       $(".menu__link").css({
         'color': '#000'
       });
-      $(".menu__list").css({
-        'background-color': '#ffffff',
-        'transition': 'background-color 0.5s ease'
+      $(".menu__ham").css({
+        'fill': '#000'
+      });
+      $(".menu__close").css({
+        'fill': '#000'
       });
       $(".header").css({
         'background-color': '#ffffff',
         'box-shadow': '0px 3px 59px 0px rgba(0, 0, 0, 0.05)',
+        'transition': 'background-color 0.5s ease'
+      });
+      $(".menu__list").css({
+        'background-color': '#fff',
         'transition': 'background-color 0.5s ease'
       });
       $(".user__phone").css({
@@ -30,7 +36,7 @@ $(document).ready(function(){
         'border-color': '#000'
       });
       $(".header__btn").css({
-        'background-image': 'url(img/mobile_menu.png)'
+        'border-color': '#000'
       });
     } else {
       $(".header").css({
@@ -40,9 +46,14 @@ $(document).ready(function(){
       $(".menu__link").css({
         'color': 'rgba(255,255,255,0.6)'
       });
+      $(".menu__ham").css({
+        'fill': '#fff'
+      });
+      $(".menu__close").css({
+        'fill': '#fff'
+      });
       $(".menu__list").css({
-        'background-color': 'transparent',
-        'transition': 'background-color 0.5s ease'
+        'background-color': 'transparent'
       });
       $(".user__phone").css({
         'color': '#fff'
@@ -53,14 +64,14 @@ $(document).ready(function(){
       });
       $(".logo-main p").css({
         'color': 'rgba(255,255,255,0.6)',
-        'background-image': 'url(../img/logo-part.png)'
+        'background-image': 'url(img/logo-part.png)'
       });
       $(".logo-main span").css({
         'color': 'rgba(255,255,255,0.8)',
         'border-color': '#fff'
       });
       $(".header__btn").css({
-        'background-image': 'url(img/mobile_menu-white.png)'
+        'border-color': '#fff'
       });
     };
   });
