@@ -29,7 +29,7 @@ $(document).ready(function(){
       });
       $(".logo-main p").css({
         'color': '#000',
-        'background-image': 'url(../img/logo-part-black.png)'
+        'background-image': 'url(/img/logo-part-black.png)'
       });
       $(".logo-main span").css({
         'color': '#000',
@@ -64,7 +64,7 @@ $(document).ready(function(){
       });
       $(".logo-main p").css({
         'color': 'rgba(255,255,255,0.6)',
-        'background-image': 'url(../img/logo-part.png)'
+        'background-image': 'url(/img/logo-part.png)'
       });
       $(".logo-main span").css({
         'color': 'rgba(255,255,255,0.8)',
