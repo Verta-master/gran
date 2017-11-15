@@ -530,6 +530,7 @@ button {
   -ms-flex-align: start;
       align-items: flex-start;
   text-transform: uppercase;
+  position: relative;
 }
 .logo-main span {
   display: block;
@@ -543,7 +544,6 @@ button {
   letter-spacing: 8px;
   text-align: center;
   border: 2px solid #fff;
-  position: relative;
 }
 .logo-main p {
   width: 80px;
@@ -555,16 +555,19 @@ button {
   font-weight: 700;
   line-height: 1.2;
   color: rgba(255, 255, 255, 0.6);
-  background-image: url(../img/logo-part.png);
-  background-repeat: no-repeat;
-  background-size: 14px 12px;
-  background-position: left 2px bottom;
 }
 .logo-main:hover span,
 .logo-main:active span,
 .logo-main:hover p,
 .logo-main:active p {
   color: #fff;
+}
+.logo-part {
+  position: absolute;
+  bottom: 1px;
+  left: 125px;
+  z-index: 25;
+  stroke: #fff;
 }
 .logo__info {
   padding-left: 57px;
@@ -2660,7 +2663,9 @@ button.swiper-pagination-bullet {
 }
 .modal .logo-main p {
   margin-bottom: 0;
-  background-image: url(../img/logo-part-black.png) !important;
+}
+.modal .logo-part {
+  stroke: #000 !important;
 }
 .modal p {
   margin-bottom: 20px;
