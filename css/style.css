@@ -1038,9 +1038,6 @@ button {
   max-width: 160px;
   margin-top: 30px;
 }
-.project__btn--modal {
-  margin-top: auto;
-}
 .project__sum {
   display: -ms-flexbox;
   display: flex;
@@ -1065,7 +1062,7 @@ button {
 }
 .project__price--modal {
   display: block;
-  margin-top: 20px;
+  margin-top: auto;
   margin-bottom: 20px;
 }
 .project__figure {
@@ -2808,6 +2805,7 @@ button.swiper-pagination-bullet {
 .modal__list {
   list-style-type: disc;
   padding-left: 15px;
+  margin-bottom: 20px;
 }
 @media all and (max-width: 800px){
   .fancybox-infobar{
