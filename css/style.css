@@ -2633,6 +2633,7 @@ button.swiper-pagination-bullet {
   display: block;
 }
 .work__figure {
+  max-height: 555px;
   overflow: hidden;
 }
 .modal {
